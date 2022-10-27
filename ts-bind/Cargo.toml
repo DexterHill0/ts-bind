@@ -1,0 +1,15 @@
+[package]
+name = "ts-bind"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+serde-compat = ["ts-bind-macros/serde-compat"]
+test-gen = ["ts-bind-macros/test-gen"]
+warnings = ["ts-bind-macros/warnings"]
+
+default = ["serde-compat", "warnings"]
+
+[dependencies]
+ts-bind-macros = { version = "0.1.0", path = "../ts-bind-macros" }
+ts-bind-shared = { version = "0.1.0", path = "../ts-bind-shared" }

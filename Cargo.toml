@@ -1,0 +1,2 @@
+[workspace]
+members = ["example", "ts-bind", "ts-bind-macros", "ts-bind-shared"]
